@@ -1,8 +1,8 @@
-# React Updating State
+# React Updating State 
 
 ## Overview
 
-In this lesson, we'll discuss updating state in React. 
+In this lesson, we'll discuss updating state in React.
 
 ## Objectives
 
@@ -24,15 +24,15 @@ For example, let's say we have a component with a button, and a bit of text to i
 class ClickityClick extends React.Component {
   constructor() {
     super();
-    
+
     // Define the initial state:
     this.state = {
       hasBeenClicked: false,
     };
-    
+
     this.handleClick = this.handleClick.bind(this);
   }
-  
+
   handleClick() {
     // Update our state here...
   }
@@ -135,8 +135,8 @@ const updatedHouse = deepMerge(house, {
 ```
 
 Deeply merging like this would only update the `legs` property with a value of `8`, but the rest of the `kitchen` and `house` objects' structure will remain intact.
- 
- 
+
+
  We can solve this using `Object.assign()` by merging the `addressInfo` object with the new data ourselves:
 
 ```js
